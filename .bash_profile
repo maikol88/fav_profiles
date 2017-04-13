@@ -16,9 +16,15 @@ alias reload='source ~/.bash_profile'
 # functions
 
 function bmkdir(){
+    if [[ $# -eq 0 ]]; then
+        echo "Failed, please enter an argument for folder name"
+        return
+    fi
+
     mkdir -p $1
     cd $1
 }
+
 
 function create_repo {
     echo "git init"
