@@ -41,7 +41,7 @@ function bcreate_repo(){
         git add -A
         git commit -m "Initialize repo"
         curl -u 'maikol88' https://api.github.com/user/repos -d '{"name":"'$dir_name'","description":"This project is a test"}'
-	git remote add origin git@github.com:maikol88/$1.git
+	git remote add origin git@github.com:maikol88/$dir_name.git
 	git push origin master
         return
     fi
