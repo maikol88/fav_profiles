@@ -12,6 +12,8 @@ alias atom='open -a atom'
 alias dev='cd ~/Development'
 alias shorten='PS1="\u:\W\$ "'
 alias reload='source ~/.bash_profile'
+alias fixaudio='sudo killall coreaudiod'
+
 
 # functions
 
