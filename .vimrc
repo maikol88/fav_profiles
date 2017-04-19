@@ -8,7 +8,7 @@ source ~/.vimrc.before
 endif
 
 " ================ General Config ====================
-set number relativenumber  "Line numbers are good
+set number  "Line numbers are good
 set history=1000           "Store lots of :cmdline history
 
 set hidden                 "This makes vim act like all other editors, buffers can exist in the background without being in a window.
