@@ -3,7 +3,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # aliases 
-
+alias brm='rm -rf'
 alias bls='ls -lhFoa'
 alias bsource='source ~/.bash_profile'
 alias bnano='nano ~/.bash_profile'
