@@ -10,7 +10,7 @@ alias bnano='nano ~/.bash_profile'
 alias home='cd ~'
 alias atom='open -a atom'
 alias dev='cd ~/Development'
-alias shorten='PS1="\u:\W\$ "'
+alias shorten='PS1="\[\033[31m\]\u:\[\033[33;1m\]\W\[\033[m\]\$ "'
 alias reload='source ~/.bash_profile'
 alias fixaudio='sudo killall coreaudiod'
 
