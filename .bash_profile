@@ -14,9 +14,21 @@ alias shorten='PS1="\[\033[31m\]\u:\[\033[33;1m\]\W\[\033[m\]\$ "'
 alias reload='source ~/.bash_profile'
 alias fixaudio='sudo killall coreaudiod'
 
+# Tmux shortcuts
+alias treload='tmux source-file ~/.tmux.conf'
+alias tinfo="tmux list-keys"
+alias tstart='tmux new -s mysession -n default'
+alias twindow='tmux new-window'
+alias tls='tmux ls'
+alias tsplith='tmux split-window -h'
+alias tsplitv='tmux split-window -v'
+alias tkillsession='tmux kill-session'
+alias trenamewindow='tmux rename-window'
+alias trenamesession='tmux rename-session'
+alias tkillpane='tmux kill-pane'
+alias tkillwindow='tmux kill-window'
 
 # functions
-
 function bmkdir(){
     if [[ $# -eq 0 ]]; then
         echo "Failed, please enter an argument for folder name"
@@ -58,14 +70,3 @@ function bcreate_repo(){
     return
 }
 
-# Tmux shortcuts
-
-alias tinfo="tmux list-keys"
-alias tstart='tmux new -s mysession -n default'
-alias twindow='tmux new-window'
-alias tls='tmux ls'
-alias tsplith='tmux split-window -h'
-alias tsplitv='tmux split-window -v'
-alias tkillsession='tmux kill-session'
-alias trenamewindow='tmux rename-window'
-alias trenamesession='tmux rename-session'
