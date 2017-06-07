@@ -13,6 +13,8 @@ alias dev='cd ~/Development'
 alias shorten='PS1="\[\033[31m\]\u:\[\033[33;1m\]\W\[\033[m\]\$ "'
 alias reload='source ~/.bash_profile'
 alias fixaudio='sudo killall coreaudiod'
+alias bkill='pkill -9'
+
 
 # Tmux shortcuts
 alias treload='tmux source-file ~/.tmux.conf'
